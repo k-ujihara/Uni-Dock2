@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 # Three options
 read -p "Enter the new conda environment name [ud2pub]: " env_name
 env_name=${env_name:-ud2pub}

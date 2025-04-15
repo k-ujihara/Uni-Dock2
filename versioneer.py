@@ -1648,7 +1648,7 @@ def get_cmdclass():
     import shutil
     from setuptools.command.install import install
     from distutils.sysconfig import get_python_lib
-    from unidock.unidock_processing.torsion_library.torsion_library_builder import TorsionLibraryBuilder
+    from _unidock.unidock_processing.torsion_library.torsion_library_builder import TorsionLibraryBuilder
 
     class build_torsion_library(install):
         def run(self):
