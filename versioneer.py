@@ -1662,6 +1662,7 @@ def get_cmdclass():
             torsion_library_install_dir_name = os.path.join(get_python_lib(), 'unidock', 'unidock_processing', 'torsion_library', 'data')
             torsion_library_install_file_name = os.path.join(torsion_library_install_dir_name, 'torsion_library.pkl')
             shutil.copy(torsion_library_file_name, torsion_library_install_file_name)
+            os.remove(torsion_library_file_name)
 
     cmds['install'] = build_torsion_library
 
