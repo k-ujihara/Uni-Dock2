@@ -10,7 +10,6 @@ if [ "$CONTAINER_REGISTRY" == "" ]; then
 else
     IMAGE_NAME=$CONTAINER_REGISTRY/$REPOSITORY_NAME
 fi
-
 docker build -t $IMAGE_NAME --target $TARGET .
 
 if [ "$CONTAINER_REGISTRY" == "" ]; then
